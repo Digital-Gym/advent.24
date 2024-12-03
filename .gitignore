@@ -1,3 +1,5 @@
-# day - 1
-1/deno.json
-input.txt
+*/deno.json
+*/input.txt
+*/*.exe
+*/*.pdb
+*/*.txt
