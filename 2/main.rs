@@ -15,7 +15,7 @@ fn give_dif(a: &str, b: &str) -> i32{
 }
 
 fn process_report(raw_report: &str) -> bool{
-  let report: Vec<&str> = raw_report.trim().split(" ").collect();
+  let report: Vec<&str> = raw_report.split(" ").collect();
   let direction = get_direction(give_dif(report[0], report[1]));
   
   for i in 0..(report.len() - 1){
@@ -38,7 +38,7 @@ fn main() {
   let input = fs::read_to_string("input.txt")
       .expect("Should have been able to read the file");
 
-  let data = input.split("\n").into_iter();
+  let data = input.split("\r\n").into_iter();
   let mut sum = 0;
 
   for i in data{
