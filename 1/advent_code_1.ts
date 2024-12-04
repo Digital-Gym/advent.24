@@ -1,3 +1,4 @@
+// part - 1
 let sum = 0;
 const a:number[] = [];
 const b:number[] = [];
